@@ -1,0 +1,39 @@
+.intro {
+	display: flex;
+	flex-direction: column;
+	max-width: 420px;
+	margin: 180px 0;
+	&__header {
+		font-weight: 700;
+		font-size: 78px;
+		margin-bottom: 24px;
+	}
+	&__desc {
+		font-weight: 400;
+		font-size: 30px;
+		margin-bottom: 52px;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		&-item {
+			padding: 2px 16px;
+			font-weight: 400;
+			font-size: 21px;
+			background: #1378ef;
+			border-radius: 64px;
+		}
+	}
+
+	&::after {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		width: 492px;
+		height: 492px;
+		background: url("../img/intro-img.png") center no-repeat;
+		right: 10px;
+		bottom: -80px;
+	}
+}
